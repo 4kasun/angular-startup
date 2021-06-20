@@ -5,8 +5,8 @@ import { MainLayoutComponent } from './_layouts/main-layout/main-layout.componen
 import { FooterComponent } from './_layouts/footer/footer.component';
 import { HeaderComponent } from './_layouts/header/header.component';
 import { RouterModule } from '@angular/router';
-
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,9 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MatToolbarModule,
+    MatIconModule
   ]
 })
 export class SharedModule { }
