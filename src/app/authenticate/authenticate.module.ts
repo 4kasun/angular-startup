@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { PasswordResetComponent } from './password-reset/password-reset.component';
 
+import { AuthenticateRoutingModule } from './authenticate-routing.module';
+import { LoginComponent } from './login/login.component';
+import { PasswordResetComponent } from './password-reset/password-reset.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { PasswordResetComponent } from './password-reset/password-reset.componen
     PasswordResetComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AuthenticateRoutingModule
   ]
 })
 export class AuthenticateModule { }

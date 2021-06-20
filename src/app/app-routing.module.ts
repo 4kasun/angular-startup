@@ -19,39 +19,31 @@ const routes: Routes = [
     ],
   },
   {
-    path: 'reset-password',
-    component: AuthLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: PasswordResetComponent,
-      },
-    ],
-  },
-  {
-    path: 'sign-up',
-    component: AuthLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: RegisterComponent,
-      },
-    ],
-  },
-  {
     path: 'users',
-    component: MainLayoutComponent,
     children: [
       {
         path: '',
         component: UsersComponent,
       },
     ],
-  }
+  },
+  {
+    path: 'auth',
+    component: AuthLayoutComponent,
+    loadChildren: () =>
+      import('./authenticate/authenticate.module').then(
+        (m) => m.AuthenticateModule
+      ),
+  },
+  {
+    path: 'sample',
+    loadChildren: () =>
+      import('./sample/sample.module').then((m) => m.SampleModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
