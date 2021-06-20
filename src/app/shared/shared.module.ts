@@ -5,8 +5,7 @@ import { MainLayoutComponent } from './_layouts/main-layout/main-layout.componen
 import { FooterComponent } from './_layouts/footer/footer.component';
 import { HeaderComponent } from './_layouts/header/header.component';
 import { RouterModule } from '@angular/router';
-
-
+import { NgbNav, NgbNavbar, NgbNavItem, NgbNavLink, NgbNavOutlet } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,12 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NgbNav,
+    NgbNavbar,
+    NgbNavItem,
+    NgbNavOutlet
   ]
 })
+
 export class SharedModule { }
