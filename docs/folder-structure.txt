@@ -1,0 +1,39 @@
+|---src
+|   |---app
+|   |   |---sample_module_1
+|   |   |   |---sample_components_1
+|   |   |   |---sample_components_2
+|   |   |   |---sample_module_1.module.ts
+|   |   |   |---sample_module_1.routing.module.ts
+|   |   |---sample_module_2
+|   |   |---shared
+|   |   |   |---shared.module.ts
+|   |   |   |---_layouts
+|   |   |   |   |---auth_layout
+|   |   |   |   |   |---auth.ts
+|   |   |   |   |   |---auth.html
+|   |   |   |   |---main_layout
+|   |   |   |   |   |---main.ts
+|   |   |   |   |   |---main.html
+|   |   |   |   |---footer
+|   |   |   |   |---header
+|   |   |---services
+|   |   |   |---services.module.ts
+|   |   |---interceptors
+|   |   |   |---headers.interceptor.ts
+|   |   |   |---auth.interceptor.ts
+|   |   |---pipes
+|   |   |   |---pipes.module.ts
+|   |   |   |---sample_1.pipe.ts
+|   |   |---directives
+|   |   |   |---derectives.module.ts
+|   |   |   |---derective_1.directive.ts
+|   |   |---guards
+|   |   |   |---auth.guard.ts
+|   |   |---app.component.ts
+│   |   |---app.component.spec.ts
+│   |   |---app.component.html  
+│   |   |---app-routing.module.ts
+|   |   |---app.module.ts 
+|   |---assets
+|   |---environments
