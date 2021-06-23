@@ -5,7 +5,7 @@ import { MainLayoutComponent } from './_layouts/main-layout/main-layout.componen
 import { FooterComponent } from './_layouts/footer/footer.component';
 import { HeaderComponent } from './_layouts/header/header.component';
 import { RouterModule } from '@angular/router';
-
+import { MaterialModule } from '../material/material.module';
 
 
 @NgModule({
@@ -17,7 +17,8 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    MaterialModule
   ]
 })
 export class SharedModule { }

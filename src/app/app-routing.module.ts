@@ -20,6 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'users',
+    component: MainLayoutComponent,
     children: [
       {
         path: '',
@@ -37,6 +38,7 @@ const routes: Routes = [
   },
   {
     path: 'sample',
+    component: MainLayoutComponent,
     loadChildren: () =>
       import('./sample/sample.module').then((m) => m.SampleModule),
   },
